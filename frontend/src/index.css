@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer components {
+  .chat-message {
+    @apply p-4 rounded-lg mb-4 max-w-4xl;
+  }
+
+  .user-message {
+    @apply bg-blue-50 border border-blue-200 ml-8;
+  }
+
+  .assistant-message {
+    @apply bg-gray-50 border border-gray-200 mr-8;
+  }
+}
